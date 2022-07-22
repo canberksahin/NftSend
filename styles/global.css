@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('/css/AvenirNextLTPro-Bold.otf');
+@import url('/css/AvenirNextLTPro-It.otf');
+@import url('/css/AvenirNextLTPro-Regular.otf');
+@import 'codemirror/lib/codemirror.css';
+@import 'codemirror/theme/material.css';
+
+body {
+  background-color: #000;
+  mix-blend-mode: normal;
+  font-family: 'Avenir Next LT Pro', 'Avenir Next', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial',
+    'sans-serif';
+}
+
+.home_hero {
+  background-image: url('/images/home_hero_3.png');
+  background-size: 100%;
+  padding: 6rem 0rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn_border_primary {
+  border-image: linear-gradient(90deg, #a8ff78, #78ffd6) 10;
+}
+
+.btn_border_secondary {
+  border-image: linear-gradient(90deg, #00eadf, #ff8b8b) 10;
+}
+
+.btn_border_primary:hover {
+  border-image: linear-gradient(90deg, #78ffd6, #a8ff78) 10;
+  box-shadow: 0px 0px 20px #a8ff78;
+}
+
+.btn_bg_secondary {
+  background: linear-gradient(90deg, #00eadf, #ff8b8b);
+}
+
+.btn_border_secondary:hover {
+  border-image: linear-gradient(90deg, #00eadf, #ff8b8b) 10;
+  box-shadow: 0px 0px 20px #ff8b8b;
+}
+
+.btn_bg_primary {
+  background: linear-gradient(90deg, #a8ff78, #78ffd6);
+}
+
+.btn_bg_primary:hover {
+  box-shadow: 2px 3px 9px #a8ff78;
+}
+
+.bg_fade_gradient {
+  background-image: linear-gradient(to bottom, black 77%, transparent);
+}
+
+.input_border_primary {
+  border-image: linear-gradient(90deg, #00eadf, #ff8b8b) 10;
+}
+
+.drop_container {
+  border-image: linear-gradient(90deg, #00eadf, #f5b544) 10;
+  background: linear-gradient(
+    89.74deg,
+    rgba(0, 234, 223, 0.11) 1.15%,
+    rgba(245, 181, 68, 0.11) 104.92%
+  );
+  backdrop-filter: blur(40px);
+}
+
+.drop_zone {
+  border-image: linear-gradient(90deg, #00eadf, #ff8b8b) 10;
+}
+
+.card_gradient {
+  border-image: linear-gradient(90deg, #00eadf2e, #d700ea) 10;
+  background: linear-gradient(
+    90.08deg,
+    rgba(0, 234, 223, 0.18) -0.37%,
+    rgba(215, 0, 234, 0.18) 110.97%
+  );
+  backdrop-filter: blur(45px);
+}
+
+.popup_gradient {
+  border-image: linear-gradient(90deg, #00eadf, #f5b544) 10;
+  background: linear-gradient(
+    90.08deg,
+    rgba(0, 234, 223, 0.18) -0.37%,
+    rgba(215, 0, 234, 0.18) 110.97%
+  );
+  backdrop-filter: blur(45px);
+}
+
+.bg-blur {
+  background: rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(64px);
+}
+.ReactCodeMirror {
+  font-size: 17px;
+}
+
+.CodeMirror-scroll {
+  background-color: #000;
+  color: white;
+  padding-left: 10px;
+}
+.CodeMirror-cursor {
+  background-color: #ffffff !important;
+}
+
+.cm-animate-fat-cursor {
+  background-color: #ffffff !important;
+}
+.CodeMirror-gutters {
+  background: black;
+  border: 0 !important;
+}
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid #ffffff !important;
+}
+
+.gradient_text {
+  /* Fallback: Set a background color. */
+  background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #a8ff78, #78ffd6);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
