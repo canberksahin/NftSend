@@ -19,7 +19,7 @@ const promisifyCsvToJson = (csvFile: File) =>
   });
 
 function MyDropzone({ onChange }: { onChange: (value: any) => void }) {
-  const onDrop = useCallback(async (files) => {
+  const onDrop = useCallback(async (files:any) => {
     const data = await promisifyCsvToJson(files[0]);
     onChange(data);
   }, []);

@@ -80,7 +80,7 @@ const StepFour = ({ slots, handleUpdateSlot, startAgain }: StepFourProps) => {
           <table className="table-auto w-4/5 py-5">
             <tbody>
               {slots.map((slot) => (
-                <Element slot={slot} handleUpdateSlot={handleUpdateSlot} />
+                <Element key={slot.id} slot={slot} handleUpdateSlot={handleUpdateSlot} />
               ))}
             </tbody>
           </table>

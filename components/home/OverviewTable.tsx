@@ -52,7 +52,7 @@ const OverviewTable = () => {
     <>
       <section className="text-gray-600 body-font">
         <div className="container px-5 mx-auto">
-          <Filter time={time} setTime={setTime} timeArray={timeArray} />
+          <Filter key={time} time={time} setTime={setTime} timeArray={timeArray} />
           <div className="w-full mx-auto overflow-auto">
             <table className="table-auto w-full text-left whitespace-no-wrap">
               <thead>
